@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitar Cita</title>
+</head>
+<body>
+  <h2>Solicitar Cita</h2>
+  <form id="citaForm">
+    <label>Mascota</label><br>
+    <select id="seleccionarMascota" required>
+        <option value="">Seleccione Mascota</option>
+    </select>
+    <br><br>
+    <label>Servicio</label><br>
+    <select id="seleccionarServicio" required>
+      <option value="">Seleccione Servicio</option>
+    </select>
+    <br><br>
+    <label>Horario</label><br>
+    <select id="seleccionarDisponibilidad" required>
+      <option value="">Seleccione Horario</option>
+    </select>
+    <br><br>
+    <button type="submit">Solicitar Cita</button>
+  </form>
+  <p id="mensaje"></p>
+  <script src="/js/citas-usuario.js"></script>
+</body>
+</html>

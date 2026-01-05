@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Servicios</title>
+</head>
+<body>
+    <h2>Gestión de Servicios</h2>
+    <p id="mensaje"></p>
+    <form id="servicioForm">
+        <input type="hidden" id="serviceId">
+        <label>Nombre</label>
+        <input type="text" id="nombre" required>
+        <label>Descripción</label>
+        <input type="text" id="descripcion">
+        <label>Precio</label>
+        <input type="number" id="precio" required min="0">
+        <button type="submit">Guardar</button>
+        <button type="button" onclick="resetForm()">Cancelar</button>
+    </form>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="serviciosTable"></tbody>
+    </table>
+    <script src="/js/servicios.js"></script>
+</body>
+</html>
